@@ -1,0 +1,20 @@
+{
+  "template": "git@github.com:squat/terraform-provider-openapi-scaffolding.git",
+  "commit": "6b396dde87490f207a360d70ebd8f754ee08b296",
+  "checkout": null,
+  "context": {
+    "cookiecutter": {
+      "github_username": "squat",
+      "cloud_provider": "DataCrunch",
+      "cloud_provider_url": "https://datacrunch.io",
+      "openapi_specification_url": "https://stoplight.io/api/v1/projects/datacrunch/datacrunch-public/nodes/public-api.yml",
+      "version": "0.0.1",
+      "_copy_without_render": [
+        ".goreleaser.yml",
+        ".github"
+      ],
+      "_template": "git@github.com:squat/terraform-provider-openapi-scaffolding.git"
+    }
+  },
+  "directory": null
+}
