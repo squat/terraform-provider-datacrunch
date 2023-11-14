@@ -128,3 +128,5 @@ $(DOCS) &: $(SPEAKEASY_FILES) | files.gen
 	sed -i 's/datacrunch Provider/DataCrunch Provider/' docs/index.md
 
 generate: $(GENERATED)
+
+-include datacrunch.mk
