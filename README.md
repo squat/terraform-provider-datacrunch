@@ -63,7 +63,7 @@ Terraform searches for the `.terraformrc` file in your home directory and applie
 provider_installation {
 
   dev_overrides {
-      "registry.terraform.io/github.com/squat/terraform-provider-datacrunch/scaffolding" = "<PATH>"
+      "squat/datacrunch" = "<PATH>"
   }
 
   # For all other providers, install them directly from their origin provider
