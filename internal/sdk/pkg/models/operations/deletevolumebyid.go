@@ -6,9 +6,29 @@ import (
 	"net/http"
 )
 
+type DeleteVolumeByIDRequestBody struct {
+	// delete volume permanently or not
+	IsPermanent *bool `json:"is_permanent,omitempty"`
+}
+
+func (o *DeleteVolumeByIDRequestBody) GetIsPermanent() *bool {
+	if o == nil {
+		return nil
+	}
+	return o.IsPermanent
+}
+
 type DeleteVolumeByIDRequest struct {
+	RequestBody *DeleteVolumeByIDRequestBody `request:"mediaType=application/json"`
 	// volume id
 	VolumeID interface{} `pathParam:"style=simple,explode=false,name=volumeId"`
+}
+
+func (o *DeleteVolumeByIDRequest) GetRequestBody() *DeleteVolumeByIDRequestBody {
+	if o == nil {
+		return nil
+	}
+	return o.RequestBody
 }
 
 func (o *DeleteVolumeByIDRequest) GetVolumeID() interface{} {
