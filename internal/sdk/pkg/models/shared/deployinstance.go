@@ -96,6 +96,7 @@ const (
 	SSHKeyIdsTypeArrayOfstr SSHKeyIdsType = "arrayOfstr"
 )
 
+// SSHKeyIds - when image value is OS volumeId, ssh_key_ids can be optional.
 type SSHKeyIds struct {
 	Str        *string
 	ArrayOfstr []string

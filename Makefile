@@ -113,9 +113,9 @@ deps:
 
 $(SPEAKEASY_BINARY):
 	mkdir -p $(@D)
-	cd $(@D) && curl https://github.com/speakeasy-api/speakeasy/releases/download/v1.119.0/speakeasy_$(OS)_$(ARCH).zip -L -o speakeasy.zip && unzip -o speakeasy.zip $(@F) && rm speakeasy.zip ; chmod +x $(@F)
+	cd $(@D) && curl https://github.com/speakeasy-api/speakeasy/releases/download/v1.129.1/speakeasy_$(OS)_$(ARCH).zip -L -o speakeasy.zip && unzip -o speakeasy.zip $(@F) && rm speakeasy.zip ; chmod +x $(@F)
 
-datacrunch.yaml: $(GOJSONTOYAML_BINARY) $(YQ_BINARY) patch.sh
+datacrunch.yaml: patch.sh
 	curl https://stoplight.io/api/v1/projects/datacrunch/datacrunch-public/nodes/public-api.yml | sh patch.sh > $@
 
 $(SPEAKEASY_FILES) files.gen &: datacrunch.yaml $(SPEAKEASY_BINARY)
