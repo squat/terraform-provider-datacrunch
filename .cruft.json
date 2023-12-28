@@ -1,6 +1,6 @@
 {
   "template": "git@github.com:squat/terraform-provider-openapi-scaffolding.git",
-  "commit": "de359207b51a116393e46f26218bfe6c8fc226f0",
+  "commit": "3af31c438047e89b45bdac47228f591a11bff20e",
   "checkout": null,
   "context": {
     "cookiecutter": {
